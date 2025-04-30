@@ -1,173 +1,232 @@
-/* style.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #141414; 
+  color: #fff;
+  scroll-behavior: smooth;
+}
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* ===== SEÇÃO HOME ===== */
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 8%;
+  margin-bottom: 10%;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 3000px;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+.home-text {
+  max-width: 400px;
+  margin-right: 7rem;
+  flex: 1;
+}
+
+.home-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 0%;
+}
+
+.home-text p {
+  font-size: 1.5rem;
+}
+
+.home-image {
+  flex: 1;
+  max-width: 550px;
+  border-radius: 50%;
+}
+
+.home-image img {
+  width: 470px;
+  height: 470px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+/* ===== SEÇÕES GERAIS ===== */
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #141414;
+  color: white;
+}
+
+section h2 {
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#habilidades ul {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+#habilidades li {
+  background: #00bcd4;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.projeto {
+  background: #0d0d0d;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.projeto a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0097a7;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.contato-box {
+  background-color: #1d2833;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.contato-box i {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #00bcd4;
+}
+
+.contato-box h3 {
+  margin: 0.5rem 0;
+  color: #6bb46e;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  color: #ccc;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00bcd4;
+}
+
+
+@media (max-width: 768px) {
   nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: #00bcd4;
-  }
-  
-  section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  section h2 {
-    border-bottom: 2px solid #00bcd4;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  #habilidades ul {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    padding: 0;
-    list-style: none;
-  }
-  
-  #habilidades li {
-    background: #00bcd4;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-  }
-  
-  .projeto {
-    background: #fff;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-  }
-  
-  .projeto a {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: #00bcd4;
-    text-decoration: none;
-  }
-  
-  form {
-    display: flex;
     flex-direction: column;
-    gap: 1rem;
-  }
-  
-  input, textarea {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  
-  button {
-    background-color: #00bcd4;
-    color: #fff;
-    border: none;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #0097a7;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  
-  .home-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  .home-texto {
-    flex: 1;
-  }
-  
-  .home-imagem img {
-    max-width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    gap: 0.5rem;
   }
 
-  .contato-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+  .home-container {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .contato-box {
-    background-color: #1b2a38;
-    color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: left;
+
+  .home-text {
+    margin-right: 0;
   }
-  
-  .contato-box i {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #00bcd4;
-  }
-  
-  .contato-box h3 {
-    margin: 0.5rem 0;
-    color: #4caf50;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 0.5rem;
-  }
-  
-  .social-icons a {
-    color: #ccc;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-  }
-  
-  .social-icons a:hover {
-    color: #00bcd4;
-  }
+}
