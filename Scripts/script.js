@@ -20,6 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       alert("Mensagem enviada com sucesso! 😊");
 
-      form.reset(); // Limpa os campos
+      form.reset();
     });
   });

@@ -180,6 +180,7 @@ hr{
   color: #a09c9c;
 }
 
+
 /* ===== FORMAÇÃO PROFISSIONAL ===== */
 
 .grid-formacao {
@@ -462,8 +463,6 @@ p a {
 p a:hover {
   color: #00bcd4;
 }
-
-
 
 @media (max-width: 768px) {
   nav ul {
