@@ -8,6 +8,8 @@ html, body {
   scroll-behavior: smooth;
 }
 
+/* ===== MENU DE NAVEGAÇÃO===== */
+
 header {
   background-color: #333;
   color: #fff;
@@ -89,6 +91,15 @@ nav ul li a:hover {
   border: 3px solid #fff;
 }
 
+/* ===== SEÇÃO SOBRE MIM ===== */
+
+#sobre p{
+  display: block;
+  font-size: 17px;
+  text-align: justify;
+}
+
+
 /* ===== SEÇÕES GERAIS ===== */
 section {
   padding: 2rem;
@@ -104,6 +115,10 @@ section h2 {
   margin-bottom: 1rem;
   text-align: center;
   font-size: 2rem;
+}
+
+hr{
+  border-color: #014d57;
 }
 
 /* ===== FORMAÇÃO ACADEMICA ===== */
@@ -167,20 +182,51 @@ section h2 {
 /* ===== HABILIDADES ===== */
 
 
-#habilidades ul {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding: 0;
-  list-style: none;
+#habilidades {
+  padding: 40px 20px;
+  text-align: center;
 }
 
-#habilidades li {
-  background: #00bcd4;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+#habilidades h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
 }
+
+#habilidades img{
+  width: 110px;
+  height: 100px;
+}
+
+.lista-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+}
+
+.habilidade {
+  text-align: center;
+  width: 120px;
+}
+
+.habilidade img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.habilidade p {
+  font-weight: bold;
+}
+
+.habilidade:hover img {
+  transform: scale(1.1);
+}
+
+/* ===== PROJETOS ===== */
 
 .projeto {
   background: #0d0d0d;
@@ -225,13 +271,7 @@ button:hover {
   background-color: #0097a7;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
+/* ===== CONTATOS ===== */
 
 .contato-grid {
   display: grid;
@@ -275,9 +315,27 @@ footer {
   color: #00bcd4;
 }
 
-hr{
-  border-color: #014d57;
+/* ===== RODAPÉ ===== */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
+
+p a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+p a:hover {
+  color: #00bcd4;
+}
+
+
 
 @media (max-width: 768px) {
   nav ul {
