@@ -97,6 +97,7 @@ nav ul li a:hover {
   display: block;
   font-size: 17px;
   text-align: justify;
+  margin-top: 30px;
 }
 
 
@@ -382,6 +383,65 @@ i {
 .social-icons a:hover {
   color: #00bcd4;
 }
+
+/* ===== MENSAGEM ===== */
+
+.formulario-contato {
+  background-color: #141414;
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+}
+
+.formulario-contato h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #00d9ff;
+}
+
+.formulario-contato p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.formulario-contato form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  background-color: #222;
+  border: 1px solid #00d9ff;
+  padding: 15px;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.formulario-contato input::placeholder,
+.formulario-contato textarea::placeholder {
+  color: #aaa;
+}
+
+.formulario-contato button {
+  background-color: #00d9ff;
+  color: black;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulario-contato button:hover {
+  background-color: #00a9cc;
+}
+
 
 /* ===== RODAPÉ ===== */
 
